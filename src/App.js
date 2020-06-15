@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 import 'antd/dist/antd.css';
-import { Avatar,Badge,Progress,Card,Tabs,List, Button, Skeleton,Row,Col,Table  } from 'antd';
-import {  CrownTwoTone,BsPlay} from '@ant-design/icons';
+import { Badge,Progress,Card,Tabs,List,Row,Col,Table  } from 'antd';
+import {} from '@ant-design/icons';
 import { GiCrossedSwords,GiAchievement,GiTrophyCup,GiRank3 } from 'react-icons/gi';
 import { GoVerified, } from 'react-icons/go';
 import { FiPlay,FiSettings } from 'react-icons/fi';
@@ -12,8 +12,6 @@ import { RiStore2Line,RiMenuAddLine } from 'react-icons/ri';
 import { BsPencil } from 'react-icons/bs';
 import { GrLogout } from 'react-icons/gr';
 import Chart from "./chart.js";
-
-
 
 
 function days_between(date1, date2) {
@@ -98,11 +96,6 @@ const tbl = [
   },
 ];
 
-
-
-
-
-
 export class index extends Component {
   constructor(props) {
     super(props);
@@ -140,27 +133,16 @@ export class index extends Component {
         activities:[
             
         ],
-        missions:[
-          
-            
-          
-
+        missions:[        
+       
         ],
-          
-          
-          
-        
-        
-        
+  
       }
-      
-      
-      
+
     };
       
   }
-    
-  
+ 
   componentDidMount() {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -334,20 +316,11 @@ export class index extends Component {
                   <span style={{float:'right',color:'white',fontSize:18}}>{this.state.data.profileParamList[0].value}</span>
                   <hr style={{color:'white'}}></hr>
                 </div>
-
-              </Card>
-                       
-              
+              </Card>                     
+            </div>              
             </div> 
-
-               
-              
-
-            </div> 
-            <div>
-              
-            </div>          
-            
+            <div>              
+            </div>     
             <div className="sag-taraf">
               <p>{days_between(new Date(this.state.data.player.createdDate), new Date())} GÜN</p>              
             </div>
@@ -383,14 +356,7 @@ export class index extends Component {
               <p><GoVerified style={{fontSize:70,color:'white'}} /></p>
               <div><p><img alt="" src={this.state.data.currentLevel.imageUrl}></img></p></div>
             </div> 
-                  
-            
-            
             </div>
-            
-            
-            
-            
         </div>
         <div >
           <div className='nav-iki'>
@@ -401,9 +367,7 @@ export class index extends Component {
               <div style={{width:550,height:350,float:'left',margin:40 }}>
               <Chart style={{color:'white'}}></Chart>
               </div>  
-
             </div> 
-                       
             </TabPane>
             <TabPane className='Tab' tab="Görevler" key="2">
               <Tabs defaultActiveKey="1" onChange={this.callback}>
@@ -437,7 +401,6 @@ export class index extends Component {
             dataSource={this.state.data.activities}
             renderItem={item => (
               <List.Item className="activities">
-                
                   <List.Item.Meta style={{textAlign:'left'}}
                    
                     title={<p style={{color:'white',fontWeight:'bold'}}>{item.displayName}</p>}
@@ -445,30 +408,15 @@ export class index extends Component {
                   />
                   <div>{item.createdDate}</div>
                 
-            </List.Item>
+              </List.Item>
             )}
-      />
+                  />
             </TabPane>
-            
           </Tabs>
-          </div>
-          
-        </div>  
-        
-        
-
-                
-        
-        
-
-
-        
-      </div>
-        
-      
+          </div>         
+        </div>     
+      </div>     
     );
-    
   }
 }
-
 export default index;

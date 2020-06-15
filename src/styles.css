@@ -1,26 +1,15 @@
 .body {
     font-family:'Courier New', Courier, monospace;
     background-image: url("https://freevector-images.s3.amazonaws.com/uploads/vector/preview/40056/BlueTechBackgroundVector.jpg");
-    
     background-repeat:no-repeat;
-    background-size: cover;
-   
-
+    background-size: cover; 
 }
-
-.nav{
-       
-    margin:5px 5px;
-    
-    
-}
-    
+.nav{       
+    margin:5px 5px;   
+}    
     .nav li{
         display:inline-block;
         list-style:none;
-        
-               
-
     }
         .nav li a{
             display: block;
@@ -32,27 +21,18 @@
             width:90px;
             text-align:center;
             font-size:13px;
-            line-height: 125px;
-            
-            
-            
+            line-height: 125px;          
+
         }
         .nav li div{
             position:absolute;
             margin-top: 10px;
             margin-left: 25px;
-            color: white;
-
-            
-            
-            
-            
+            color: white;         
         }
         .nav li svg{
-            margin-bottom: -30px;
-            
-        }
-            
+            margin-bottom: -30px;            
+        }            
 .ekran{
     width:1190px;
     height:400px;
@@ -74,15 +54,12 @@
         }
     .ekran .sol-taraf{
         float:left;
-        width:220px;
-        
-        
-        
-    }   .ekran .sol-taraf p{
+        width:220px;       
+    }   
+    .ekran .sol-taraf p{
         color: white;
         margin-top: 10px;
         font-weight: bold;
-        
     }
         .ekran .sol-taraf .kart{
             margin-left: 15px;
@@ -96,10 +73,6 @@
             border-style: solid;
             background-color: transparent;
             height: 340px;
-            
-            
-            
-            
         }                       
                          
             .ekran .sol-taraf .kart img{
@@ -107,8 +80,7 @@
                 filter: drop-shadow(5px 5px 5px #222);
                 width: 180px;
                 height: 180px;
-                margin-left: 42px;
-                                
+                margin-left: 42px;                                
             }
         .ekran .sag-taraf{
             float: right;
@@ -116,32 +88,27 @@
             margin-top: 20px;
             color: white;
             font-family: 'Courier New', Courier, monospace;
-        }
-    
+        }    
         .ekran .orta p{
         float: right;
-        margin-left: 95px;
+        margin-left: 155px;
         margin-top: 100px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
-        border-right: 1px solid gray;
-        
-        
+        border-right: 1px solid gray;       
+
     }
         .ekran .data{
         float: left;         
         color: white;
         font-family: 'Courier New', Courier, monospace;  
-        margin-left: 220px;    
-        
+        margin-left: 220px;   
 
         }  
             .ekran .data p{
                 float: right;
                 margin-left:85px ;
-                width: 120px;
-                
-                
+                width: 120px;               
             }
             .ekran .data img{
                 width: 90px;
@@ -150,9 +117,8 @@
                 position: absolute;
                 left: 260px;
                 bottom: 300px;
-            }              
+            }             
                        
-
 .nav-iki{
     margin:10px 50px;
     width: 1190px ;
@@ -179,14 +145,12 @@
         border-color: gray;
         border-style: solid;
         background-color:transparent;
-        height: 400px;
-        
+        height: 400px;        
     }
         .ant-table-content{
             background-color: #c41d7f;
             color:black;
-        }
-        
+        }       
         
 .ant-tabs-nav-wrap {
     display: flex !important;
@@ -195,8 +159,7 @@
   }
   .ant-tabs-tab{
       width: 120px;
-  }
-        
+  }        
 .görevler{
     margin-left: 55px;
     color: white;
